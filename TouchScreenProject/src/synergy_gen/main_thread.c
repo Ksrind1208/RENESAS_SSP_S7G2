@@ -14,8 +14,15 @@ SSP_VECTOR_DEFINE( icu_irq_isr, ICU, IRQ9);
 #endif
 static icu_instance_ctrl_t g_external_irq0_ctrl;
 static const external_irq_cfg_t g_external_irq0_cfg =
-{ .channel = 9, .trigger = EXTERNAL_IRQ_TRIG_FALLING, .filter_enable = true, .pclk_div = EXTERNAL_IRQ_PCLK_DIV_BY_64,
-  .autostart = true, .p_callback = NULL, .p_context = &g_external_irq0, .p_extend = NULL, .irq_ipl = (3), };
+{ .channel = 9,
+  .trigger = EXTERNAL_IRQ_TRIG_FALLING,
+  .filter_enable = true,
+  .pclk_div = EXTERNAL_IRQ_PCLK_DIV_BY_64,
+  .autostart = true,
+  .p_callback = NULL,
+  .p_context = &g_external_irq0,
+  .p_extend = NULL,
+  .irq_ipl = (3), };
 /* Instance structure to use this module. */
 const external_irq_instance_t g_external_irq0 =
 { .p_ctrl = &g_external_irq0_ctrl, .p_cfg = &g_external_irq0_cfg, .p_api = &g_external_irq_on_icu };
@@ -27,12 +34,20 @@ const sf_external_irq_instance_t g_sf_external_irq0 =
 { .p_ctrl = &g_sf_external_irq0_ctrl, .p_cfg = &g_sf_external_irq0_cfg, .p_api = &g_sf_external_irq_on_sf_external_irq };
 /** Get driver cfg from bus and use all same settings except slave address and addressing mode. */
 const i2c_cfg_t g_sf_i2c_device0_i2c_cfg =
-{ .channel = g_sf_i2c_bus0_CHANNEL, .rate = g_sf_i2c_bus0_RATE, .slave = 0x48, .addr_mode = I2C_ADDR_MODE_7BIT,
-  .sda_delay = g_sf_i2c_bus0_SDA_DELAY, .p_transfer_tx = g_sf_i2c_bus0_P_TRANSFER_TX, .p_transfer_rx =
-          g_sf_i2c_bus0_P_TRANSFER_RX,
-  .p_callback = g_sf_i2c_bus0_P_CALLBACK, .p_context = g_sf_i2c_bus0_P_CONTEXT, .rxi_ipl = g_sf_i2c_bus0_RXI_IPL,
-  .txi_ipl = g_sf_i2c_bus0_TXI_IPL, .tei_ipl = g_sf_i2c_bus0_TEI_IPL, .eri_ipl = g_sf_i2c_bus0_ERI_IPL, .p_extend =
-          g_sf_i2c_bus0_P_EXTEND, };
+{ .channel = g_sf_i2c_bus0_CHANNEL,
+  .rate = g_sf_i2c_bus0_RATE,
+  .slave = 0x48,
+  .addr_mode = I2C_ADDR_MODE_7BIT,
+  .sda_delay = g_sf_i2c_bus0_SDA_DELAY,
+  .p_transfer_tx = g_sf_i2c_bus0_P_TRANSFER_TX,
+  .p_transfer_rx = g_sf_i2c_bus0_P_TRANSFER_RX,
+  .p_callback = g_sf_i2c_bus0_P_CALLBACK,
+  .p_context = g_sf_i2c_bus0_P_CONTEXT,
+  .rxi_ipl = g_sf_i2c_bus0_RXI_IPL,
+  .txi_ipl = g_sf_i2c_bus0_TXI_IPL,
+  .tei_ipl = g_sf_i2c_bus0_TEI_IPL,
+  .eri_ipl = g_sf_i2c_bus0_ERI_IPL,
+  .p_extend = g_sf_i2c_bus0_P_EXTEND, };
 
 sf_i2c_instance_ctrl_t g_sf_i2c_device0_ctrl =
 { .p_lower_lvl_ctrl = &g_i2c_ctrl, };
@@ -43,8 +58,11 @@ const sf_i2c_instance_t g_sf_i2c_device0 =
 { .p_ctrl = &g_sf_i2c_device0_ctrl, .p_cfg = &g_sf_i2c_device0_cfg, .p_api = &g_sf_i2c_on_sf_i2c };
 sf_touch_panel_chip_sx8654_instance_ctrl_t g_touch_panel_chip_sx8654_ctrl;
 const sf_touch_panel_chip_on_sx8654_cfg_t g_touch_panel_chip_sx8654_cfg_extend =
-{ .pin = IOPORT_PORT_06_PIN_09, .p_lower_lvl_framewrk = &g_sf_i2c_device0, .p_lower_lvl_irq = &g_sf_external_irq0,
-  .hsize_pixels = 240, .vsize_pixels = 320 };
+{ .pin = IOPORT_PORT_06_PIN_09,
+  .p_lower_lvl_framewrk = &g_sf_i2c_device0,
+  .p_lower_lvl_irq = &g_sf_external_irq0,
+  .hsize_pixels = 240,
+  .vsize_pixels = 320 };
 const sf_touch_panel_chip_cfg_t g_touch_panel_chip_sx8654_cfg =
 { .p_extend = &g_touch_panel_chip_sx8654_cfg_extend };
 const sf_touch_panel_chip_instance_t g_touch_panel_chip_sx8654 =
@@ -62,8 +80,14 @@ sf_touch_panel_v2_instance_ctrl_t g_sf_touch_panel_ctrl;
 const sf_touch_panel_v2_extend_cfg_t g_sf_touch_panel_cfg_extend =
 { .p_chip = &g_touch_panel_chip_sx8654 };
 const sf_touch_panel_v2_cfg_t g_sf_touch_panel_cfg =
-{ .hsize_pixels = 240, .vsize_pixels = 320, .priority = 3, .update_hz = 10, .p_extend = &g_sf_touch_panel_cfg_extend,
-  .rotation_angle = 0, .p_callback = touch_panel_v2_callback, .p_context = &g_sf_touch_panel };
+{ .hsize_pixels = 240,
+  .vsize_pixels = 320,
+  .priority = 3,
+  .update_hz = 10,
+  .p_extend = &g_sf_touch_panel_cfg_extend,
+  .rotation_angle = 0,
+  .p_callback = touch_panel_v2_callback,
+  .p_context = &g_sf_touch_panel };
 
 /* Instance structure to use this module. */
 const sf_touch_panel_v2_instance_t g_sf_touch_panel =
@@ -124,13 +148,24 @@ SSP_VECTOR_DEFINE(elc_software_event_isr, ELC, SOFTWARE_EVENT_1);
 
 dtc_instance_ctrl_t g_transfer1_ctrl;
 transfer_info_t g_transfer1_info =
-{ .dest_addr_mode = TRANSFER_ADDR_MODE_INCREMENTED, .repeat_area = TRANSFER_REPEAT_AREA_DESTINATION, .irq =
-          TRANSFER_IRQ_END,
-  .chain_mode = TRANSFER_CHAIN_MODE_DISABLED, .src_addr_mode = TRANSFER_ADDR_MODE_FIXED, .size = TRANSFER_SIZE_1_BYTE,
-  .mode = TRANSFER_MODE_NORMAL, .p_dest = (void*) NULL, .p_src = (void const*) NULL, .num_blocks = 0, .length = 0, };
+{ .dest_addr_mode = TRANSFER_ADDR_MODE_INCREMENTED,
+  .repeat_area = TRANSFER_REPEAT_AREA_DESTINATION,
+  .irq = TRANSFER_IRQ_END,
+  .chain_mode = TRANSFER_CHAIN_MODE_DISABLED,
+  .src_addr_mode = TRANSFER_ADDR_MODE_FIXED,
+  .size = TRANSFER_SIZE_1_BYTE,
+  .mode = TRANSFER_MODE_NORMAL,
+  .p_dest = (void*) NULL,
+  .p_src = (void const*) NULL,
+  .num_blocks = 0,
+  .length = 0, };
 const transfer_cfg_t g_transfer1_cfg =
-{ .p_info = &g_transfer1_info, .activation_source = ELC_EVENT_SCI0_RXI, .auto_enable = false, .p_callback = NULL,
-  .p_context = &g_transfer1, .irq_ipl = (BSP_IRQ_DISABLED) };
+{ .p_info = &g_transfer1_info,
+  .activation_source = ELC_EVENT_SCI0_RXI,
+  .auto_enable = false,
+  .p_callback = NULL,
+  .p_context = &g_transfer1,
+  .irq_ipl = (BSP_IRQ_DISABLED) };
 /* Instance structure to use this module. */
 const transfer_instance_t g_transfer1 =
 { .p_ctrl = &g_transfer1_ctrl, .p_cfg = &g_transfer1_cfg, .p_api = &g_transfer_on_dtc };
@@ -150,13 +185,24 @@ SSP_VECTOR_DEFINE(elc_software_event_isr, ELC, SOFTWARE_EVENT_1);
 
 dtc_instance_ctrl_t g_transfer0_ctrl;
 transfer_info_t g_transfer0_info =
-{ .dest_addr_mode = TRANSFER_ADDR_MODE_FIXED, .repeat_area = TRANSFER_REPEAT_AREA_SOURCE, .irq = TRANSFER_IRQ_END,
-  .chain_mode = TRANSFER_CHAIN_MODE_DISABLED, .src_addr_mode = TRANSFER_ADDR_MODE_INCREMENTED, .size =
-          TRANSFER_SIZE_1_BYTE,
-  .mode = TRANSFER_MODE_NORMAL, .p_dest = (void*) NULL, .p_src = (void const*) NULL, .num_blocks = 0, .length = 0, };
+{ .dest_addr_mode = TRANSFER_ADDR_MODE_FIXED,
+  .repeat_area = TRANSFER_REPEAT_AREA_SOURCE,
+  .irq = TRANSFER_IRQ_END,
+  .chain_mode = TRANSFER_CHAIN_MODE_DISABLED,
+  .src_addr_mode = TRANSFER_ADDR_MODE_INCREMENTED,
+  .size = TRANSFER_SIZE_1_BYTE,
+  .mode = TRANSFER_MODE_NORMAL,
+  .p_dest = (void*) NULL,
+  .p_src = (void const*) NULL,
+  .num_blocks = 0,
+  .length = 0, };
 const transfer_cfg_t g_transfer0_cfg =
-{ .p_info = &g_transfer0_info, .activation_source = ELC_EVENT_SCI0_TXI, .auto_enable = false, .p_callback = NULL,
-  .p_context = &g_transfer0, .irq_ipl = (BSP_IRQ_DISABLED) };
+{ .p_info = &g_transfer0_info,
+  .activation_source = ELC_EVENT_SCI0_TXI,
+  .auto_enable = false,
+  .p_callback = NULL,
+  .p_context = &g_transfer0,
+  .irq_ipl = (BSP_IRQ_DISABLED) };
 /* Instance structure to use this module. */
 const transfer_instance_t g_transfer0 =
 { .p_ctrl = &g_transfer0_ctrl, .p_cfg = &g_transfer0_cfg, .p_api = &g_transfer_on_dtc };

@@ -16,13 +16,24 @@ SSP_VECTOR_DEFINE(elc_software_event_isr, ELC, SOFTWARE_EVENT_1);
 
 dtc_instance_ctrl_t g_transfer5_ctrl;
 transfer_info_t g_transfer5_info =
-{ .dest_addr_mode = TRANSFER_ADDR_MODE_INCREMENTED, .repeat_area = TRANSFER_REPEAT_AREA_DESTINATION, .irq =
-          TRANSFER_IRQ_END,
-  .chain_mode = TRANSFER_CHAIN_MODE_DISABLED, .src_addr_mode = TRANSFER_ADDR_MODE_FIXED, .size = TRANSFER_SIZE_1_BYTE,
-  .mode = TRANSFER_MODE_NORMAL, .p_dest = (void*) NULL, .p_src = (void const*) NULL, .num_blocks = 0, .length = 0, };
+{ .dest_addr_mode = TRANSFER_ADDR_MODE_INCREMENTED,
+  .repeat_area = TRANSFER_REPEAT_AREA_DESTINATION,
+  .irq = TRANSFER_IRQ_END,
+  .chain_mode = TRANSFER_CHAIN_MODE_DISABLED,
+  .src_addr_mode = TRANSFER_ADDR_MODE_FIXED,
+  .size = TRANSFER_SIZE_1_BYTE,
+  .mode = TRANSFER_MODE_NORMAL,
+  .p_dest = (void*) NULL,
+  .p_src = (void const*) NULL,
+  .num_blocks = 0,
+  .length = 0, };
 const transfer_cfg_t g_transfer5_cfg =
-{ .p_info = &g_transfer5_info, .activation_source = ELC_EVENT_IIC2_RXI, .auto_enable = false, .p_callback = NULL,
-  .p_context = &g_transfer5, .irq_ipl = (BSP_IRQ_DISABLED) };
+{ .p_info = &g_transfer5_info,
+  .activation_source = ELC_EVENT_IIC2_RXI,
+  .auto_enable = false,
+  .p_callback = NULL,
+  .p_context = &g_transfer5,
+  .irq_ipl = (BSP_IRQ_DISABLED) };
 /* Instance structure to use this module. */
 const transfer_instance_t g_transfer5 =
 { .p_ctrl = &g_transfer5_ctrl, .p_cfg = &g_transfer5_cfg, .p_api = &g_transfer_on_dtc };
@@ -42,13 +53,24 @@ SSP_VECTOR_DEFINE(elc_software_event_isr, ELC, SOFTWARE_EVENT_1);
 
 dtc_instance_ctrl_t g_transfer4_ctrl;
 transfer_info_t g_transfer4_info =
-{ .dest_addr_mode = TRANSFER_ADDR_MODE_FIXED, .repeat_area = TRANSFER_REPEAT_AREA_SOURCE, .irq = TRANSFER_IRQ_END,
-  .chain_mode = TRANSFER_CHAIN_MODE_DISABLED, .src_addr_mode = TRANSFER_ADDR_MODE_INCREMENTED, .size =
-          TRANSFER_SIZE_1_BYTE,
-  .mode = TRANSFER_MODE_NORMAL, .p_dest = (void*) NULL, .p_src = (void const*) NULL, .num_blocks = 0, .length = 0, };
+{ .dest_addr_mode = TRANSFER_ADDR_MODE_FIXED,
+  .repeat_area = TRANSFER_REPEAT_AREA_SOURCE,
+  .irq = TRANSFER_IRQ_END,
+  .chain_mode = TRANSFER_CHAIN_MODE_DISABLED,
+  .src_addr_mode = TRANSFER_ADDR_MODE_INCREMENTED,
+  .size = TRANSFER_SIZE_1_BYTE,
+  .mode = TRANSFER_MODE_NORMAL,
+  .p_dest = (void*) NULL,
+  .p_src = (void const*) NULL,
+  .num_blocks = 0,
+  .length = 0, };
 const transfer_cfg_t g_transfer4_cfg =
-{ .p_info = &g_transfer4_info, .activation_source = ELC_EVENT_IIC2_TXI, .auto_enable = false, .p_callback = NULL,
-  .p_context = &g_transfer4, .irq_ipl = (BSP_IRQ_DISABLED) };
+{ .p_info = &g_transfer4_info,
+  .activation_source = ELC_EVENT_IIC2_TXI,
+  .auto_enable = false,
+  .p_callback = NULL,
+  .p_context = &g_transfer4,
+  .irq_ipl = (BSP_IRQ_DISABLED) };
 /* Instance structure to use this module. */
 const transfer_instance_t g_transfer4 =
 { .p_ctrl = &g_transfer4_ctrl, .p_cfg = &g_transfer4_cfg, .p_api = &g_transfer_on_dtc };
@@ -92,10 +114,14 @@ static TX_EVENT_FLAGS_GROUP sf_bus_eventflag_g_sf_i2c_bus0;
 static sf_i2c_instance_ctrl_t *sf_curr_ctrl_g_sf_i2c_bus0;
 static sf_i2c_instance_ctrl_t *sf_curr_bus_ctrl_g_sf_i2c_bus0;
 sf_i2c_bus_t g_sf_i2c_bus0 =
-{ .p_bus_name = (uint8_t*) "g_sf_i2c_bus0", .channel = 2, .p_lock_mutex = &sf_bus_mutex_g_sf_i2c_bus0,
-  .p_sync_eventflag = &sf_bus_eventflag_g_sf_i2c_bus0, .pp_curr_ctrl = (sf_i2c_ctrl_t**) &sf_curr_ctrl_g_sf_i2c_bus0,
-  .p_lower_lvl_api = (i2c_api_master_t*) &g_i2c_master_on_riic, .device_count = 0, .pp_curr_bus_ctrl =
-          (sf_i2c_ctrl_t**) &sf_curr_bus_ctrl_g_sf_i2c_bus0, };
+{ .p_bus_name = (uint8_t*) "g_sf_i2c_bus0",
+  .channel = 2,
+  .p_lock_mutex = &sf_bus_mutex_g_sf_i2c_bus0,
+  .p_sync_eventflag = &sf_bus_eventflag_g_sf_i2c_bus0,
+  .pp_curr_ctrl = (sf_i2c_ctrl_t**) &sf_curr_ctrl_g_sf_i2c_bus0,
+  .p_lower_lvl_api = (i2c_api_master_t*) &g_i2c_master_on_riic,
+  .device_count = 0,
+  .pp_curr_bus_ctrl = (sf_i2c_ctrl_t**) &sf_curr_bus_ctrl_g_sf_i2c_bus0, };
 #if SYNERGY_NOT_DEFINED != BSP_IRQ_DISABLED
 #if !defined(SSP_SUPPRESS_ISR_DRW)
 SSP_VECTOR_DEFINE(drw_int_isr, DRW, INT);
@@ -105,9 +131,13 @@ SSP_VECTOR_DEFINE( jpeg_jdti_isr, JPEG, JDTI);
 SSP_VECTOR_DEFINE( jpeg_jedi_isr, JPEG, JEDI);
 static jpeg_decode_instance_ctrl_t g_jpeg_decode0_ctrl;
 const jpeg_decode_cfg_t g_jpeg_decode0_cfg =
-{ .input_data_format = JPEG_DECODE_DATA_FORMAT_NORMAL, .output_data_format = JPEG_DECODE_DATA_FORMAT_NORMAL,
-  .pixel_format = JPEG_DECODE_PIXEL_FORMAT_RGB565, .alpha_value = 255, .p_callback = NULL, .jedi_ipl = (3), .jdti_ipl =
-          (3), };
+{ .input_data_format = JPEG_DECODE_DATA_FORMAT_NORMAL,
+  .output_data_format = JPEG_DECODE_DATA_FORMAT_NORMAL,
+  .pixel_format = JPEG_DECODE_PIXEL_FORMAT_RGB565,
+  .alpha_value = 255,
+  .p_callback = NULL,
+  .jedi_ipl = (3),
+  .jdti_ipl = (3), };
 const jpeg_decode_instance_t g_jpeg_decode0 =
 { .p_api = (jpeg_decode_api_t const*) &g_jpeg_decode_on_jpeg_decode, .p_ctrl = &g_jpeg_decode0_ctrl, .p_cfg =
           &g_jpeg_decode0_cfg };
@@ -188,93 +218,105 @@ SSP_VECTOR_DEFINE( glcdc_underflow_2_isr, GLCDC, UNDERFLOW_2);
 
 /** Display device extended configuration */
 static const glcd_cfg_t g_display_extend_cfg =
-{ .tcon_hsync = GLCD_TCON_PIN_2, .tcon_vsync = GLCD_TCON_PIN_1, .tcon_de = GLCD_TCON_PIN_0, .correction_proc_order =
-          GLCD_CORRECTION_PROC_ORDER_BRIGHTNESS_CONTRAST2GAMMA,
-  .clksrc = GLCD_CLK_SRC_INTERNAL, .clock_div_ratio = GLCD_PANEL_CLK_DIVISOR_32, .dithering_mode =
-          GLCD_DITHERING_MODE_TRUNCATE,
-  .dithering_pattern_A = GLCD_DITHERING_PATTERN_11, .dithering_pattern_B = GLCD_DITHERING_PATTERN_11,
-  .dithering_pattern_C = GLCD_DITHERING_PATTERN_11, .dithering_pattern_D = GLCD_DITHERING_PATTERN_11 };
+{ .tcon_hsync = GLCD_TCON_PIN_2,
+  .tcon_vsync = GLCD_TCON_PIN_1,
+  .tcon_de = GLCD_TCON_PIN_0,
+  .correction_proc_order = GLCD_CORRECTION_PROC_ORDER_BRIGHTNESS_CONTRAST2GAMMA,
+  .clksrc = GLCD_CLK_SRC_INTERNAL,
+  .clock_div_ratio = GLCD_PANEL_CLK_DIVISOR_32,
+  .dithering_mode = GLCD_DITHERING_MODE_TRUNCATE,
+  .dithering_pattern_A = GLCD_DITHERING_PATTERN_11,
+  .dithering_pattern_B = GLCD_DITHERING_PATTERN_11,
+  .dithering_pattern_C = GLCD_DITHERING_PATTERN_11,
+  .dithering_pattern_D = GLCD_DITHERING_PATTERN_11 };
 
 /** Display control block instance */
 glcd_instance_ctrl_t g_display_ctrl;
 
 /** Display interface configuration */
 const display_cfg_t g_display_cfg =
-{
-/** Input1(Graphics1 screen) configuration */
-.input[0] =
-{
+        {
+        /** Input1(Graphics1 screen) configuration */
+        .input[0
+                  ] =
+                  {
 #if (true)
                 .p_base              = (uint32_t *)&g_display_fb_background[0],
                 #else
-  .p_base = NULL,
+                    .p_base = NULL,
 #endif
-  .hsize = 256,
-  .vsize = 320, .hstride = 256, .format = DISPLAY_IN_FORMAT_16BITS_RGB565, .line_descending_enable = false,
-  .lines_repeat_enable = false, .lines_repeat_times = 0 },
+                    .hsize = 256,
+                    .vsize = 320, .hstride = 256, .format = DISPLAY_IN_FORMAT_16BITS_RGB565, .line_descending_enable =
+                            false,
+                    .lines_repeat_enable = false, .lines_repeat_times = 0 },
 
-  /** Input2(Graphics2 screen) configuration */
-  .input[1] =
-  {
+          /** Input2(Graphics2 screen) configuration */
+          .input[1
+                  ] =
+                  {
 #if (false)
                 .p_base              = (uint32_t *)&g_display_fb_foreground[0],
                 #else
-    .p_base = NULL,
+                    .p_base = NULL,
 #endif
-    .hsize = 800,
-    .vsize = 480, .hstride = 800, .format = DISPLAY_IN_FORMAT_16BITS_RGB565, .line_descending_enable = false,
-    .lines_repeat_enable = false, .lines_repeat_times = 0 },
+                    .hsize = 800,
+                    .vsize = 480, .hstride = 800, .format = DISPLAY_IN_FORMAT_16BITS_RGB565, .line_descending_enable =
+                            false,
+                    .lines_repeat_enable = false, .lines_repeat_times = 0 },
 
-  /** Input1(Graphics1 screen) layer configuration */
-  .layer[0] =
-  { .coordinate =
-  { .x = 0, .y = 0 },
-    .bg_color =
-    { .byte =
-    { .a = 255, .r = 255, .g = 255, .b = 255 } },
-    .fade_control = DISPLAY_FADE_CONTROL_NONE, .fade_speed = 0 },
+          /** Input1(Graphics1 screen) layer configuration */
+          .layer[0] =
+          { .coordinate =
+          { .x = 0, .y = 0 },
+            .bg_color =
+            { .byte =
+            { .a = 255, .r = 255, .g = 255, .b = 255 } },
+            .fade_control = DISPLAY_FADE_CONTROL_NONE, .fade_speed = 0 },
 
-  /** Input2(Graphics2 screen) layer configuration */
-  .layer[1] =
-  { .coordinate =
-  { .x = 0, .y = 0 },
-    .bg_color =
-    { .byte =
-    { .a = 255, .r = 255, .g = 255, .b = 255 } },
-    .fade_control = DISPLAY_FADE_CONTROL_NONE, .fade_speed = 0 },
+          /** Input2(Graphics2 screen) layer configuration */
+          .layer[1] =
+          { .coordinate =
+          { .x = 0, .y = 0 },
+            .bg_color =
+            { .byte =
+            { .a = 255, .r = 255, .g = 255, .b = 255 } },
+            .fade_control = DISPLAY_FADE_CONTROL_NONE, .fade_speed = 0 },
 
-  /** Output configuration */
-  .output =
-  { .htiming =
-  { .total_cyc = 320, .display_cyc = 240, .back_porch = 6, .sync_width = 4, .sync_polarity =
-            DISPLAY_SIGNAL_POLARITY_LOACTIVE },
-    .vtiming =
-    { .total_cyc = 328, .display_cyc = 320, .back_porch = 4, .sync_width = 4, .sync_polarity =
-              DISPLAY_SIGNAL_POLARITY_LOACTIVE },
-    .format = DISPLAY_OUT_FORMAT_16BITS_RGB565, .endian = DISPLAY_ENDIAN_LITTLE, .color_order = DISPLAY_COLOR_ORDER_RGB,
-    .data_enable_polarity = DISPLAY_SIGNAL_POLARITY_HIACTIVE, .sync_edge = DISPLAY_SIGNAL_SYNC_EDGE_RISING, .bg_color =
-    { .byte =
-    { .a = 255, .r = 0, .g = 0, .b = 0 } },
-    .brightness =
-    { .enable = false, .r = 512, .g = 512, .b = 512 },
-    .contrast =
-    { .enable = false, .r = 128, .g = 128, .b = 128 },
+          /** Output configuration */
+          .output =
+                  { .htiming =
+                  { .total_cyc = 320, .display_cyc = 240, .back_porch = 6, .sync_width = 4, .sync_polarity =
+                            DISPLAY_SIGNAL_POLARITY_LOACTIVE },
+                    .vtiming =
+                    { .total_cyc = 328, .display_cyc = 320, .back_porch = 4, .sync_width = 4, .sync_polarity =
+                              DISPLAY_SIGNAL_POLARITY_LOACTIVE },
+                    .format = DISPLAY_OUT_FORMAT_16BITS_RGB565, .endian = DISPLAY_ENDIAN_LITTLE, .color_order =
+                            DISPLAY_COLOR_ORDER_RGB,
+                    .data_enable_polarity = DISPLAY_SIGNAL_POLARITY_HIACTIVE, .sync_edge =
+                            DISPLAY_SIGNAL_SYNC_EDGE_RISING,
+                    .bg_color =
+                    { .byte =
+                    { .a = 255, .r = 0, .g = 0, .b = 0 } },
+                    .brightness =
+                    { .enable = false, .r = 512, .g = 512, .b = 512 },
+                    .contrast =
+                    { .enable = false, .r = 128, .g = 128, .b = 128 },
 #if (false | false | false)
                 .p_gamma_correction  = (display_gamma_correction_t *)(&g_display_gamma_cfg),
 #else
-    .p_gamma_correction = NULL,
+                    .p_gamma_correction = NULL,
 #endif
-    .dithering_on = false },
+                    .dithering_on = false },
 
-  /** Display device callback function pointer */
-  .p_callback = NULL,
-  .p_context = (void*) &g_display,
+          /** Display device callback function pointer */
+          .p_callback = NULL,
+          .p_context = (void*) &g_display,
 
-  /** Display device extended configuration */
-  .p_extend = (void*) (&g_display_extend_cfg),
+          /** Display device extended configuration */
+          .p_extend = (void*) (&g_display_extend_cfg),
 
-  .line_detect_ipl = (3),
-  .underflow_1_ipl = (3), .underflow_2_ipl = (3), };
+          .line_detect_ipl = (3),
+          .underflow_1_ipl = (3), .underflow_2_ipl = (3), };
 
 #if (true)
         /** Display on GLCD run-time configuration(for the graphics1 screen) */
