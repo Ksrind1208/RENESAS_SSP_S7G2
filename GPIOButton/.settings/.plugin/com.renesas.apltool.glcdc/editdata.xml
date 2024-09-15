@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><settings>
+    <generalMapData>
+        <item key="LcdSEttingView_SelectedLcdId">NHD-4.3-480272EF-ATXL#-CTP</item>
+        <item key="LcdSEttingView_SelectedMakerId">001_Newhaven_Display_International_Inc</item>
+        <item key="Project_SelectedBoardName"/>
+    </generalMapData>
+    <lcdMapData lcdId="NHD-4.3-480272EF-ATXL#-CTP" makerId="001_Newhaven_Display_International_Inc">
+        <item key="AbstractLcdParamsBaseParamsType">VSyncHSync</item>
+        <item key="DoubleMapItem_HorizontalFrequencyKHz">17.142857142857142</item>
+        <item key="DoubleMapItem_PanelClockFrequencyMHz">9.0</item>
+        <item key="DoubleMapItem_RefreshRate">59.94005994005994</item>
+        <item key="DoubleMapItem_VerticalFrequency">59.94005994005994</item>
+        <item key="IntegerMapItem_ClockFequencyMHz">240000000</item>
+        <item key="IntegerMapItem_HorizontalBackPorchClk">2</item>
+        <item key="IntegerMapItem_HorizontalDisplayPeriodClk">480</item>
+        <item key="IntegerMapItem_HorizontalFrontPorchClk">2</item>
+        <item key="IntegerMapItem_HorizontalPulseWidthClk">41</item>
+        <item key="IntegerMapItem_HorizontalTotalPeriodClk">525</item>
+        <item key="IntegerMapItem_PanelClockFrequencyMHz">9000000</item>
+        <item key="IntegerMapItem_VertialBackPorchLine">2</item>
+        <item key="IntegerMapItem_VertialDisplayPeriodLine">272</item>
+        <item key="IntegerMapItem_VertialFrontPorchLine">2</item>
+        <item key="IntegerMapItem_VertialPulseWidthLine">10</item>
+        <item key="IntegerMapItem_VertialTotalPeriodLine">286</item>
+        <item key="SelectedChannelNummber">0</item>
+    </lcdMapData>
+</settings>
