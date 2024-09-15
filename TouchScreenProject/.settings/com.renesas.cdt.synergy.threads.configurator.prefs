@@ -1,0 +1,13 @@
+collapse/module.driver.i2c_on_riic.1996606586=false
+collapse/module.driver.jpeg_decode.19403173=false
+collapse/module.driver.spi_on_sci_spi.413986366=false
+collapse/module.el.gx.1597316336=false
+collapse/module.external.ex_touch_panel_chip_sx8654_on_ex_touch_panel_chip_sx8654.295890990=false
+collapse/module.framework.sf_el_gx.36933578=false
+collapse/module.framework.sf_external_irq_on_sf_external_irq.1230647153=false
+collapse/module.framework.sf_i2c_bus_on_sf_i2c_v2.363058104=false
+collapse/module.framework.sf_i2c_on_sf_i2c_v2.890990695=false
+collapse/module.framework.sf_jpeg_decode.147033677=false
+collapse/module.framework.sf_touch_panel_v2_on_sf_touch_panel_v2.931002504=false
+collapse/module.framework.tes.dave2d.1398981056=false
+eclipse.preferences.version=1
