@@ -5,7 +5,7 @@ bsp_leds_t leds;
 // Define the number of counts per millisecond (1 count per clock tick, clock rate is 120MHz)
 // So there are 120E6 ticks per second.
 // Divide by 1000 to get ticks / millisecond
-#define COUNTS_PER_MILLISECOND  (120E6 / 1000)
+#define COUNTS_PER_MILLISECOND  (120E6)
 void turnallon_led(){
    R_IOPORT_PinWrite(leds.p_leds[0], IOPORT_LEVEL_LOW);
    R_IOPORT_PinWrite(leds.p_leds[1], IOPORT_LEVEL_LOW);
@@ -32,14 +32,14 @@ void hal_entry(void)
     while(1)
     {
         // Turn LED
-        if(isOn){
-            turnalloff_led();
-
-        }else{
-            turnallon_led();
-        }
-        // Toggle LED State
-        isOn = !isOn;
+//        if(isOn){
+//            turnalloff_led();
+//
+//        }else{
+//            turnallon_led();
+//        }
+//        // Toggle LED State
+//        isOn = !isOn;
 
         // Wait for timer loop
         while (1)
@@ -49,11 +49,19 @@ void hal_entry(void)
 
             // Check if 500ms has elapsed => This should be a helper function at some point
             // Need to look if the PBCLK settings are stored in a define somewhere...
-            if (counts > (500*COUNTS_PER_MILLISECOND))
+            if (counts > (0.01*COUNTS_PER_MILLISECOND))
             {
                 // Reset the timer to 0
                 g_timer.p_api->reset(g_timer.p_ctrl);
                 break;
+            }
+            if (counts < (0.05*0.01*COUNTS_PER_MILLISECOND))
+            {
+                turnallon_led();
+            }
+            if (counts > (0.05*0.01*COUNTS_PER_MILLISECOND) && counts < (0.01*COUNTS_PER_MILLISECOND))
+            {
+                turnalloff_led();
             }
         }
     }

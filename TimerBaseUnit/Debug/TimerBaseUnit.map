@@ -637,7 +637,7 @@ LOAD c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-ar
 LOAD c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
 END GROUP
 
-.text           0x00000000     0x5f60
+.text           0x00000000     0x5f70
                 0x00000000                __ROM_Start = .
  *(.vectors)
  .vectors       0x00000000       0x40 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
@@ -1288,240 +1288,239 @@ END GROUP
                 0x000035b8        0xc ./src/synergy_gen/main.o
                 0x000035b8                main
  .text.hal_entry
-                0x000035c4       0x8c ./src/hal_entry.o
+                0x000035c4       0xa0 ./src/hal_entry.o
                 0x000035c4                hal_entry
  .text.R_FMI_ProductInfoGet
-                0x00003650       0x34 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00003664       0x34 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.R_FMI_VersionGet
-                0x00003684       0x10 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00003698       0x10 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.R_FMI_UniqueIdGet
-                0x00003694       0x40 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x000036a8       0x40 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.R_FMI_EventInfoGet
-                0x000036d4       0x8c D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x000036e8       0x8c D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.R_FMI_Init
-                0x00003760       0x90 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00003774       0x90 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.R_FMI_FeatureGet
-                0x000037f0      0x238 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
- .text          0x00003a28       0x30 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
-                0x00003a28                __aeabi_uldivmod
- .text          0x00003a58      0x2d0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x00003a58                __udivmoddi4
- .text          0x00003d28        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
-                0x00003d28                __aeabi_idiv0
-                0x00003d28                __aeabi_ldiv0
- .text.__errno  0x00003d2c        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
-                0x00003d2c                __errno
- .text.memcpy   0x00003d38       0x1c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memcpy-stub.o)
-                0x00003d38                memcpy
- .text.memset   0x00003d54       0x10 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memset.o)
-                0x00003d54                memset
- .text.srand    0x00003d64       0x5c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-rand.o)
-                0x00003d64                srand
+                0x00003804      0x238 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+ .text          0x00003a3c       0x30 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x00003a3c                __aeabi_uldivmod
+ .text          0x00003a6c      0x2d0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x00003a6c                __udivmoddi4
+ .text          0x00003d3c        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+                0x00003d3c                __aeabi_idiv0
+                0x00003d3c                __aeabi_ldiv0
+ .text.__errno  0x00003d40        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
+                0x00003d40                __errno
+ .text.memcpy   0x00003d4c       0x1c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memcpy-stub.o)
+                0x00003d4c                memcpy
+ .text.memset   0x00003d68       0x10 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memset.o)
+                0x00003d68                memset
+ .text.srand    0x00003d78       0x5c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-rand.o)
+                0x00003d78                srand
  .text.__assert_func
-                0x00003dc0       0x3c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-assert.o)
-                0x00003dc0                __assert_func
- .text.fprintf  0x00003dfc       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fprintf.o)
-                0x00003dfc                fiprintf
-                0x00003dfc                fprintf
- .text.malloc   0x00003e20       0x10 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-malloc.o)
-                0x00003e20                malloc
- .text._free_r  0x00003e30       0x98 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-freer.o)
-                0x00003e30                _free_r
+                0x00003dd4       0x3c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-assert.o)
+                0x00003dd4                __assert_func
+ .text.fprintf  0x00003e10       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fprintf.o)
+                0x00003e10                fiprintf
+                0x00003e10                fprintf
+ .text.malloc   0x00003e34       0x10 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-malloc.o)
+                0x00003e34                malloc
+ .text._free_r  0x00003e44       0x98 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-freer.o)
+                0x00003e44                _free_r
  .text.sbrk_aligned
-                0x00003ec8       0x40 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-mallocr.o)
+                0x00003edc       0x40 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-mallocr.o)
  .text._malloc_r
-                0x00003f08       0xe8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-mallocr.o)
-                0x00003f08                _malloc_r
+                0x00003f1c       0xe8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-mallocr.o)
+                0x00003f1c                _malloc_r
  .text.__sfputc_r
-                0x00003ff0       0x2e c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x00004004       0x2e c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x0000401e       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
-                0x0000401e                __sfputs_r
- *fill*         0x00004042        0x2 ff
+                0x00004032       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x00004032                __sfputs_r
+ *fill*         0x00004056        0x2 ff
  .text._vfprintf_r
-                0x00004044      0x260 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
-                0x00004044                _vfprintf_r
-                0x00004044                _vfiprintf_r
+                0x00004058      0x260 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x00004058                _vfprintf_r
+                0x00004058                _vfiprintf_r
  .text._printf_common
-                0x000042a4       0xda c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x000042a4                _printf_common
- *fill*         0x0000437e        0x2 ff
+                0x000042b8       0xda c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000042b8                _printf_common
+ *fill*         0x00004392        0x2 ff
  .text._printf_i
-                0x00004380      0x24c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00004380                _printf_i
- .text._sbrk_r  0x000045cc       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-sbrkr.o)
-                0x000045cc                _sbrk_r
+                0x00004394      0x24c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00004394                _printf_i
+ .text._sbrk_r  0x000045e0       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-sbrkr.o)
+                0x000045e0                _sbrk_r
  .text.__swbuf_r
-                0x000045ec       0xa4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wbuf.o)
-                0x000045ec                __swbuf_r
+                0x00004600       0xa4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wbuf.o)
+                0x00004600                __swbuf_r
  .text.__swsetup_r
-                0x00004690       0xdc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wsetup.o)
-                0x00004690                __swsetup_r
- .text.abort    0x0000476c        0xe c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-abort.o)
-                0x0000476c                abort
- *fill*         0x0000477a        0x2 ff
+                0x000046a4       0xdc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-wsetup.o)
+                0x000046a4                __swsetup_r
+ .text.abort    0x00004780        0xe c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-abort.o)
+                0x00004780                abort
+ *fill*         0x0000478e        0x2 ff
  .text.__sflush_r
-                0x0000477c      0x10c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fflush.o)
-                0x0000477c                __sflush_r
+                0x00004790      0x10c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fflush.o)
+                0x00004790                __sflush_r
  .text._fflush_r
-                0x00004888       0x78 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fflush.o)
-                0x00004888                _fflush_r
- .text.std      0x00004900       0x48 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x0000489c       0x78 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fflush.o)
+                0x0000489c                _fflush_r
+ .text.std      0x00004914       0x48 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x00004948        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x00004948                _cleanup_r
+                0x0000495c        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x0000495c                _cleanup_r
  .text.__sfmoreglue
-                0x00004954       0x2c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x00004954                __sfmoreglue
+                0x00004968       0x2c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x00004968                __sfmoreglue
  .text.__sfp_lock_acquire
-                0x00004980        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x00004980                __sfp_lock_acquire
+                0x00004994        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x00004994                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x0000498c        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x0000498c                __sfp_lock_release
+                0x000049a0        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x000049a0                __sfp_lock_release
  .text.__sinit_lock_acquire
-                0x00004998        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x00004998                __sinit_lock_acquire
+                0x000049ac        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x000049ac                __sinit_lock_acquire
  .text.__sinit_lock_release
-                0x000049a4        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x000049a4                __sinit_lock_release
- .text.__sinit  0x000049b0       0x70 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x000049b0                __sinit
- .text.__sfp    0x00004a20       0x8c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x00004a20                __sfp
+                0x000049b8        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x000049b8                __sinit_lock_release
+ .text.__sinit  0x000049c4       0x70 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x000049c4                __sinit
+ .text.__sfp    0x00004a34       0x8c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x00004a34                __sfp
  .text._fwalk_reent
-                0x00004aac       0x3e c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fwalk.o)
-                0x00004aac                _fwalk_reent
+                0x00004ac0       0x3e c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fwalk.o)
+                0x00004ac0                _fwalk_reent
  .text.__retarget_lock_init_recursive
-                0x00004aea        0x2 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
-                0x00004aea                __retarget_lock_init_recursive
+                0x00004afe        0x2 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
+                0x00004afe                __retarget_lock_init_recursive
  .text.__retarget_lock_acquire_recursive
-                0x00004aec        0x2 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
-                0x00004aec                __retarget_lock_acquire_recursive
+                0x00004b00        0x2 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
+                0x00004b00                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x00004aee        0x2 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
-                0x00004aee                __retarget_lock_release_recursive
+                0x00004b02        0x2 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lock.o)
+                0x00004b02                __retarget_lock_release_recursive
  .text.__swhatbuf_r
-                0x00004af0       0x4a c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-makebuf.o)
-                0x00004af0                __swhatbuf_r
- *fill*         0x00004b3a        0x2 ff
+                0x00004b04       0x4a c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-makebuf.o)
+                0x00004b04                __swhatbuf_r
+ *fill*         0x00004b4e        0x2 ff
  .text.__smakebuf_r
-                0x00004b3c       0x80 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-makebuf.o)
-                0x00004b3c                __smakebuf_r
- *fill*         0x00004bbc        0x4 ff
- .text          0x00004bc0       0xa0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memchr.o)
-                0x00004bc0                memchr
+                0x00004b50       0x80 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-makebuf.o)
+                0x00004b50                __smakebuf_r
+ .text          0x00004bd0       0xa0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memchr.o)
+                0x00004bd0                memchr
  .text.__malloc_lock
-                0x00004c60        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-mlock.o)
-                0x00004c60                __malloc_lock
+                0x00004c70        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-mlock.o)
+                0x00004c70                __malloc_lock
  .text.__malloc_unlock
-                0x00004c6c        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-mlock.o)
-                0x00004c6c                __malloc_unlock
+                0x00004c7c        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-mlock.o)
+                0x00004c7c                __malloc_unlock
  .text._raise_r
-                0x00004c78       0x50 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signal.o)
-                0x00004c78                _raise_r
- .text.raise    0x00004cc8       0x10 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signal.o)
-                0x00004cc8                raise
- .text._kill_r  0x00004cd8       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signalr.o)
-                0x00004cd8                _kill_r
+                0x00004c88       0x50 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signal.o)
+                0x00004c88                _raise_r
+ .text.raise    0x00004cd8       0x10 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signal.o)
+                0x00004cd8                raise
+ .text._kill_r  0x00004ce8       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signalr.o)
+                0x00004ce8                _kill_r
  .text._getpid_r
-                0x00004cfc        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signalr.o)
-                0x00004cfc                _getpid_r
- .text.__sread  0x00004d00       0x22 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
-                0x00004d00                __sread
+                0x00004d0c        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-signalr.o)
+                0x00004d0c                _getpid_r
+ .text.__sread  0x00004d10       0x22 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
+                0x00004d10                __sread
  .text.__swrite
-                0x00004d22       0x38 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
-                0x00004d22                __swrite
- .text.__sseek  0x00004d5a       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
-                0x00004d5a                __sseek
+                0x00004d32       0x38 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
+                0x00004d32                __swrite
+ .text.__sseek  0x00004d6a       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
+                0x00004d6a                __sseek
  .text.__sclose
-                0x00004d7e        0x8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
-                0x00004d7e                __sclose
- *fill*         0x00004d86        0x2 ff
+                0x00004d8e        0x8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-stdio.o)
+                0x00004d8e                __sclose
+ *fill*         0x00004d96        0x2 ff
  .text._write_r
-                0x00004d88       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-writer.o)
-                0x00004d88                _write_r
+                0x00004d98       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-writer.o)
+                0x00004d98                _write_r
  .text._close_r
-                0x00004dac       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-closer.o)
-                0x00004dac                _close_r
+                0x00004dbc       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-closer.o)
+                0x00004dbc                _close_r
  .text._fstat_r
-                0x00004dcc       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fstatr.o)
-                0x00004dcc                _fstat_r
+                0x00004ddc       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-fstatr.o)
+                0x00004ddc                _fstat_r
  .text._isatty_r
-                0x00004df0       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-isattyr.o)
-                0x00004df0                _isatty_r
+                0x00004e00       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-isattyr.o)
+                0x00004e00                _isatty_r
  .text._lseek_r
-                0x00004e10       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lseekr.o)
-                0x00004e10                _lseek_r
- .text._read_r  0x00004e34       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-readr.o)
-                0x00004e34                _read_r
+                0x00004e20       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-lseekr.o)
+                0x00004e20                _lseek_r
+ .text._read_r  0x00004e44       0x24 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-readr.o)
+                0x00004e44                _read_r
  .text.findslot
-                0x00004e58       0x34 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
- .text.error    0x00004e8c       0x1c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00004e68       0x34 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+ .text.error    0x00004e9c       0x1c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
  .text.checkerror
-                0x00004ea8        0xa c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00004eb8        0xa c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
  .text._swiread
-                0x00004eb2       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00004eb2                _swiread
- .text._read    0x00004ed2       0x38 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00004ed2                _read
+                0x00004ec2       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00004ec2                _swiread
+ .text._read    0x00004ee2       0x38 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00004ee2                _read
  .text._swilseek
-                0x00004f0a       0x78 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00004f0a                _swilseek
- .text._lseek   0x00004f82        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00004f82                _lseek
+                0x00004f1a       0x78 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00004f1a                _swilseek
+ .text._lseek   0x00004f92        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00004f92                _lseek
  .text._swiwrite
-                0x00004f86       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00004f86                _swiwrite
- .text._write   0x00004fa6       0x48 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00004fa6                _write
+                0x00004f96       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00004f96                _swiwrite
+ .text._write   0x00004fb6       0x48 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00004fb6                _write
  .text._swiclose
-                0x00004fee       0x1a c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00004fee                _swiclose
- .text._close   0x00005008       0x4c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00005008                _close
- .text._getpid  0x00005054        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00005054                _getpid
+                0x00004ffe       0x1a c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00004ffe                _swiclose
+ .text._close   0x00005018       0x4c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00005018                _close
+ .text._getpid  0x00005064        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00005064                _getpid
  .text._swistat
-                0x00005058       0x42 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00005058                _swistat
- .text._fstat   0x0000509a       0x1c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x0000509a                _fstat
- .text._stat    0x000050b6       0x3a c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x000050b6                _stat
+                0x00005068       0x42 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00005068                _swistat
+ .text._fstat   0x000050aa       0x1c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x000050aa                _fstat
+ .text._stat    0x000050c6       0x3a c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x000050c6                _stat
  .text._swiopen
-                0x000050f0       0xb4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x000050f0                _swiopen
+                0x00005100       0xb4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00005100                _swiopen
  .text._get_semihosting_exts
-                0x000051a4       0xb8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x000051a4                _get_semihosting_exts
+                0x000051b4       0xb8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x000051b4                _get_semihosting_exts
  .text.initialise_semihosting_exts
-                0x0000525c       0x34 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x0000526c       0x34 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
  .text._has_ext_exit_extended
-                0x00005290       0x18 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00005290                _has_ext_exit_extended
- .text._isatty  0x000052a8       0x38 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x000052a8                _isatty
- .text._exit    0x000052e0       0x14 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-_exit.o)
-                0x000052e0                _exit
+                0x000052a0       0x18 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x000052a0                _has_ext_exit_extended
+ .text._isatty  0x000052b8       0x38 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x000052b8                _isatty
+ .text._exit    0x000052f0       0x14 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-_exit.o)
+                0x000052f0                _exit
  .text._kill_shared
-                0x000052f4       0x26 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-_kill.o)
-                0x000052f4                _kill_shared
- *fill*         0x0000531a        0x2 ff
- .text._kill    0x0000531c       0x18 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-_kill.o)
-                0x0000531c                _kill
- .text          0x00005334       0x10 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strlen.o)
-                0x00005334                strlen
+                0x00005304       0x26 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-_kill.o)
+                0x00005304                _kill_shared
+ *fill*         0x0000532a        0x2 ff
+ .text._kill    0x0000532c       0x18 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-_kill.o)
+                0x0000532c                _kill
+ .text          0x00005344       0x10 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strlen.o)
+                0x00005344                strlen
  *(.version)
- .version       0x00005344       0x7c ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
+ .version       0x00005354       0x7c ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
  *(.init)
- .init          0x000053c0        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x000053c0                _init
- .init          0x000053c4        0x8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x000053d0        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x000053d0                _init
+ .init          0x000053d4        0x8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x000053cc        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x000053cc                _fini
- .fini          0x000053d0        0x8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .fini          0x000053dc        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x000053dc                _fini
+ .fini          0x000053e0        0x8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1534,150 +1533,150 @@ END GROUP
  *(.dtors)
  *(.rodata*)
  .rodata.g_ioport_on_ioport
-                0x000053d8       0x3c ./synergy/ssp/src/driver/r_ioport/r_ioport.o
-                0x000053d8                g_ioport_on_ioport
+                0x000053e8       0x3c ./synergy/ssp/src/driver/r_ioport/r_ioport.o
+                0x000053e8                g_ioport_on_ioport
  .rodata.g_timer_on_gpt
-                0x00005414       0x28 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
-                0x00005414                g_timer_on_gpt
+                0x00005424       0x28 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
+                0x00005424                g_timer_on_gpt
  .rodata.g_elc_on_elc
-                0x0000543c       0x1c ./synergy/ssp/src/driver/r_elc/r_elc.o
-                0x0000543c                g_elc_on_elc
+                0x0000544c       0x1c ./synergy/ssp/src/driver/r_elc/r_elc.o
+                0x0000544c                g_elc_on_elc
  .rodata.g_cgc_on_cgc
-                0x00005458       0x6c ./synergy/ssp/src/driver/r_cgc/r_cgc.o
-                0x00005458                g_cgc_on_cgc
+                0x00005468       0x6c ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+                0x00005468                g_cgc_on_cgc
  .rodata.g_pllccr2_div_setting
-                0x000054c4        0x8 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+                0x000054d4        0x8 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
  .rodata.g_pllccr2_div_value
-                0x000054cc        0x6 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
- *fill*         0x000054d2        0x2 ff
- .rodata.g_pllccr_div_setting
-                0x000054d4        0x6 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
- *fill*         0x000054da        0x2 ff
- .rodata.g_pllccr_div_value
                 0x000054dc        0x6 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
  *fill*         0x000054e2        0x2 ff
+ .rodata.g_pllccr_div_setting
+                0x000054e4        0x6 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+ *fill*         0x000054ea        0x2 ff
+ .rodata.g_pllccr_div_value
+                0x000054ec        0x6 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+ *fill*         0x000054f2        0x2 ff
  .rodata.g_cgc_feature
-                0x000054e4       0x2c ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
+                0x000054f4       0x2c ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
  .rodata.g_bsp_module_stop
-                0x00005510       0x46 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
- *fill*         0x00005556        0x2 ff
+                0x00005520       0x46 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
+ *fill*         0x00005566        0x2 ff
  .rodata.gp_mstp
-                0x00005558       0x10 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
+                0x00005568       0x10 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
  .rodata.gp_vector_information
-                0x00005568        0x4 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
-                0x00005568                gp_vector_information
+                0x00005578        0x4 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
+                0x00005578                gp_vector_information
  .rodata.g_prcr_masks
-                0x0000556c        0x6 ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
- *fill*         0x00005572        0x2 ff
+                0x0000557c        0x6 ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
+ *fill*         0x00005582        0x2 ff
  .rodata.g_elc_cfg
-                0x00005574        0xc ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
+                0x00005584        0xc ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
  .rodata.g_bsp_leds
-                0x00005580        0x8 ./synergy/board/s7g2_sk/bsp_leds.o
-                0x00005580                g_bsp_leds
+                0x00005590        0x8 ./synergy/board/s7g2_sk/bsp_leds.o
+                0x00005590                g_bsp_leds
  .rodata.g_bsp_prv_leds
-                0x00005588        0x6 ./synergy/board/s7g2_sk/bsp_leds.o
- *fill*         0x0000558e        0x2 ff
+                0x00005598        0x6 ./synergy/board/s7g2_sk/bsp_leds.o
+ *fill*         0x0000559e        0x2 ff
  .rodata.g_timer
-                0x00005590        0xc ./src/synergy_gen/hal_data.o
-                0x00005590                g_timer
+                0x000055a0        0xc ./src/synergy_gen/hal_data.o
+                0x000055a0                g_timer
  .rodata.g_timer_cfg
-                0x0000559c       0x20 ./src/synergy_gen/hal_data.o
+                0x000055ac       0x20 ./src/synergy_gen/hal_data.o
  .rodata.g_timer_extend
-                0x000055bc        0x5 ./src/synergy_gen/hal_data.o
- *fill*         0x000055c1        0x3 ff
+                0x000055cc        0x5 ./src/synergy_gen/hal_data.o
+ *fill*         0x000055d1        0x3 ff
  .rodata.g_bsp_pin_cfg
-                0x000055c4        0x8 ./src/synergy_gen/pin_data.o
-                0x000055c4                g_bsp_pin_cfg
+                0x000055d4        0x8 ./src/synergy_gen/pin_data.o
+                0x000055d4                g_bsp_pin_cfg
  .rodata.g_bsp_pin_cfg_data
-                0x000055cc      0x370 ./src/synergy_gen/pin_data.o
-                0x000055cc                g_bsp_pin_cfg_data
+                0x000055dc      0x370 ./src/synergy_gen/pin_data.o
+                0x000055dc                g_bsp_pin_cfg_data
  .rodata.bit_count
-                0x0000593c       0x80 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x0000594c       0x80 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .rodata.bit_count_mask
-                0x000059bc        0x8 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x000059cc        0x8 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .rodata.g_fmi_on_fmi
-                0x000059c4       0x18 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
-                0x000059c4                g_fmi_on_fmi
+                0x000059d4       0x18 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x000059d4                g_fmi_on_fmi
  .rodata.g_fmi_data
-                0x000059dc      0x400 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
-                0x000059dc                g_fmi_data
+                0x000059ec      0x400 D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
+                0x000059ec                g_fmi_data
  .rodata._global_impure_ptr
-                0x00005ddc        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-impure.o)
-                0x00005ddc                _global_impure_ptr
+                0x00005dec        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-impure.o)
+                0x00005dec                _global_impure_ptr
  .rodata.srand.str1.1
-                0x00005de0       0x95 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-rand.o)
+                0x00005df0       0x95 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-rand.o)
  .rodata.__assert_func.str1.1
-                0x00005e75       0x3c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-assert.o)
+                0x00005e85       0x3c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-assert.o)
                                  0x3d (size before relaxing)
  .rodata._vfprintf_r.str1.1
-                0x00005eb1       0x11 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x00005ec1       0x11 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x00005ec2       0x22 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00005ed2       0x22 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-nano-vfprintf_i.o)
  .rodata.__sf_fake_stderr
-                0x00005ee4       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x00005ee4                __sf_fake_stderr
+                0x00005ef4       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x00005ef4                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x00005f04       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x00005f04                __sf_fake_stdin
+                0x00005f14       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x00005f14                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x00005f24       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
-                0x00005f24                __sf_fake_stdout
+                0x00005f34       0x20 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-findfp.o)
+                0x00005f34                __sf_fake_stdout
  .rodata._get_semihosting_exts.str1.1
-                0x00005f44       0x16 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
-                0x00005f5a                __usb_dev_descriptor_start_fs = .
+                0x00005f54       0x16 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\librdimon_nano.a(rdimon-syscalls.o)
+                0x00005f6a                __usb_dev_descriptor_start_fs = .
  *(.usb_device_desc_fs*)
-                0x00005f5a                __usb_cfg_descriptor_start_fs = .
+                0x00005f6a                __usb_cfg_descriptor_start_fs = .
  *(.usb_config_desc_fs*)
-                0x00005f5a                __usb_interface_descriptor_start_fs = .
+                0x00005f6a                __usb_interface_descriptor_start_fs = .
  *(.usb_interface_desc_fs*)
-                0x00005f5a                __usb_descriptor_end_fs = .
-                0x00005f5a                __usb_dev_descriptor_start_hs = .
+                0x00005f6a                __usb_descriptor_end_fs = .
+                0x00005f6a                __usb_dev_descriptor_start_hs = .
  *(.usb_device_desc_hs*)
-                0x00005f5a                __usb_cfg_descriptor_start_hs = .
+                0x00005f6a                __usb_cfg_descriptor_start_hs = .
  *(.usb_config_desc_hs*)
-                0x00005f5a                __usb_interface_descriptor_start_hs = .
+                0x00005f6a                __usb_interface_descriptor_start_hs = .
  *(.usb_interface_desc_hs*)
-                0x00005f5a                __usb_descriptor_end_hs = .
+                0x00005f6a                __usb_descriptor_end_hs = .
  *(.eh_frame*)
- *fill*         0x00005f5a        0x2 ff
- .eh_frame      0x00005f5c        0x0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .eh_frame      0x00005f5c        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
-                0x00005f60                __ROM_End = .
+ *fill*         0x00005f6a        0x2 ff
+ .eh_frame      0x00005f6c        0x0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x00005f6c        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+                0x00005f70                __ROM_End = .
                 0x00000040                __Vectors_Size = (__Vectors_End - __Vectors)
                 0x00000000                __Vector_Info_Size = (__Vector_Info_End - __Vector_Info_Start)
                 0x000001b0                __Lock_Lookup_Size = (__Lock_Lookup_End - __Lock_Lookup_Start)
 
-.glue_7         0x00005f60        0x0
- .glue_7        0x00005f60        0x0 linker stubs
+.glue_7         0x00005f70        0x0
+ .glue_7        0x00005f70        0x0 linker stubs
 
-.glue_7t        0x00005f60        0x0
- .glue_7t       0x00005f60        0x0 linker stubs
+.glue_7t        0x00005f70        0x0
+ .glue_7t       0x00005f70        0x0 linker stubs
 
-.vfp11_veneer   0x00005f60        0x0
- .vfp11_veneer  0x00005f60        0x0 linker stubs
+.vfp11_veneer   0x00005f70        0x0
+ .vfp11_veneer  0x00005f70        0x0 linker stubs
 
-.v4_bx          0x00005f60        0x0
- .v4_bx         0x00005f60        0x0 linker stubs
+.v4_bx          0x00005f70        0x0
+ .v4_bx         0x00005f70        0x0 linker stubs
 
-.iplt           0x00005f60        0x0
- .iplt          0x00005f60        0x0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x00005f70        0x0
+ .iplt          0x00005f70        0x0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00005f60                __exidx_start = .
+                0x00005f70                __exidx_start = .
 
-.ARM.exidx      0x00005f60        0x8
+.ARM.exidx      0x00005f70        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x00005f60        0x8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x00005f68                __exidx_end = .
-                0x00005f68                __etext = .
+ .ARM.exidx     0x00005f70        0x8 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x00005f78                __exidx_end = .
+                0x00005f78                __etext = .
 
 .ssp_dtc_vector_table
                 0x1ffe0000        0x0
                 0x1ffe0000                . = ORIGIN (RAM)
  *(.ssp_dtc_vector_table)
 
-.data           0x1ffe0000       0xe0 load address 0x00005f68
+.data           0x1ffe0000       0xe0 load address 0x00005f78
                 0x1ffe0000                __data_start__ = .
  *(vtable)
  *(.data*)
@@ -2042,7 +2041,7 @@ END GROUP
                 0x1ffe00e0                __data_end__ = .
                 0x0000006c                __Lock_Size = (__Lock_End - __Lock_Start)
 
-.igot.plt       0x1ffe00e0        0x0 load address 0x00006048
+.igot.plt       0x1ffe00e0        0x0 load address 0x00006058
  .igot.plt      0x1ffe00e0        0x0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
 .qspi_flash     0x60000000        0x0
@@ -2050,10 +2049,10 @@ END GROUP
  *(.qspi_flash*)
                 0x60000000                __qspi_flash_end__ = .
                 0x00000000                __qspi_flash_code_size__ = (__qspi_flash_end__ - __qspi_flash_start__)
-                0x00006048                __qspi_flash_code_addr__ = (__etext + (__data_end__ - __data_start__))
+                0x00006058                __qspi_flash_code_addr__ = (__etext + (__data_end__ - __data_start__))
 
 .qspi_non_retentive
-                0x60000000        0x0 load address 0x00006048
+                0x60000000        0x0 load address 0x00006058
                 0x60000000                __qspi_non_retentive_start__ = .
  *(.qspi_non_retentive*)
                 0x60000000                __qspi_non_retentive_end__ = .
@@ -2363,7 +2362,7 @@ LOAD linker stubs
  .comment       0x00000049       0x4a D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .comment       0x00000049       0x4a D:\Documents\File_code\RENESAS\TimerBaseUnit\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
 
-.debug_info     0x00000000    0x39535
+.debug_info     0x00000000    0x3952b
  .debug_info    0x00000000    0x10aa9 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
  .debug_info    0x00010aa9     0x6f3b ./synergy/ssp/src/driver/r_gpt/r_gpt.o
  .debug_info    0x000179e4     0x2262 ./synergy/ssp/src/driver/r_elc/r_elc.o
@@ -2390,9 +2389,9 @@ LOAD linker stubs
  .debug_info    0x00035571     0x1840 ./src/synergy_gen/hal_data.o
  .debug_info    0x00036db1       0x5d ./src/synergy_gen/main.o
  .debug_info    0x00036e0e      0x989 ./src/synergy_gen/pin_data.o
- .debug_info    0x00037797     0x1d9e ./src/hal_entry.o
+ .debug_info    0x00037797     0x1d94 ./src/hal_entry.o
 
-.debug_abbrev   0x00000000     0x3f6c
+.debug_abbrev   0x00000000     0x3f69
  .debug_abbrev  0x00000000      0x553 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
  .debug_abbrev  0x00000553      0x651 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
  .debug_abbrev  0x00000ba4      0x358 ./synergy/ssp/src/driver/r_elc/r_elc.o
@@ -2419,9 +2418,9 @@ LOAD linker stubs
  .debug_abbrev  0x000039d9      0x1d3 ./src/synergy_gen/hal_data.o
  .debug_abbrev  0x00003bac       0x5b ./src/synergy_gen/main.o
  .debug_abbrev  0x00003c07      0x104 ./src/synergy_gen/pin_data.o
- .debug_abbrev  0x00003d0b      0x261 ./src/hal_entry.o
+ .debug_abbrev  0x00003d0b      0x25e ./src/hal_entry.o
 
-.debug_loc      0x00000000     0x996a
+.debug_loc      0x00000000     0x9947
  .debug_loc     0x00000000     0x20cf ./synergy/ssp/src/driver/r_ioport/r_ioport.o
  .debug_loc     0x000020cf     0x28d8 ./synergy/ssp/src/driver/r_gpt/r_gpt.o
  .debug_loc     0x000049a7      0x2d1 ./synergy/ssp/src/driver/r_elc/r_elc.o
@@ -2440,7 +2439,6 @@ LOAD linker stubs
  .debug_loc     0x00009642       0xb8 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
  .debug_loc     0x000096fa       0x25 ./synergy/board/s7g2_sk/bsp_init.o
  .debug_loc     0x0000971f      0x228 ./synergy/board/s7g2_sk/bsp_qspi.o
- .debug_loc     0x00009947       0x23 ./src/hal_entry.o
 
 .debug_aranges  0x00000000      0x6b0
  .debug_aranges
@@ -2523,7 +2521,7 @@ LOAD linker stubs
  .debug_ranges  0x000022f0       0x10 ./src/synergy_gen/main.o
  .debug_ranges  0x00002300       0x38 ./src/hal_entry.o
 
-.debug_line     0x00000000     0xbe5f
+.debug_line     0x00000000     0xbe90
  .debug_line    0x00000000     0x1584 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
  .debug_line    0x00001584     0x19bb ./synergy/ssp/src/driver/r_gpt/r_gpt.o
  .debug_line    0x00002f3f      0x6f8 ./synergy/ssp/src/driver/r_elc/r_elc.o
@@ -2550,7 +2548,7 @@ LOAD linker stubs
  .debug_line    0x0000b3dd      0x3b9 ./src/synergy_gen/hal_data.o
  .debug_line    0x0000b796       0x59 ./src/synergy_gen/main.o
  .debug_line    0x0000b7ef      0x219 ./src/synergy_gen/pin_data.o
- .debug_line    0x0000ba08      0x457 ./src/hal_entry.o
+ .debug_line    0x0000ba08      0x488 ./src/hal_entry.o
 
 .debug_str      0x00000000     0xf6e5
  .debug_str     0x00000000     0x81f0 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
