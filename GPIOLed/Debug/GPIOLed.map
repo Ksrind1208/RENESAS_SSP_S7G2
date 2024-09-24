@@ -1,9 +1,9 @@
 Archive member included to satisfy reference by file (symbol)
 
-D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
                               ./synergy/ssp/src/driver/r_ioport/r_ioport.o (g_fmi_on_fmi)
-D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
-                              D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o) (g_fmi_data)
+D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
+                              D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o) (g_fmi_data)
 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
                               ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o (__errno)
 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-exit.o)
@@ -258,8 +258,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 ./src/synergy_gen/common_data.o
  .debug_ranges  0x00000000       0x10 ./src/synergy_gen/common_data.o
- .debug_line    0x00000000      0x3ec ./src/synergy_gen/common_data.o
- .debug_str     0x00000000     0x7393 ./src/synergy_gen/common_data.o
+ .debug_line    0x00000000      0x452 ./src/synergy_gen/common_data.o
+ .debug_str     0x00000000     0x73a4 ./src/synergy_gen/common_data.o
  .comment       0x00000000       0x4a ./src/synergy_gen/common_data.o
  .debug_frame   0x00000000       0x20 ./src/synergy_gen/common_data.o
  .ARM.attributes
@@ -275,7 +275,7 @@ Discarded input sections
                 0x00000000       0x20 ./src/synergy_gen/hal_data.o
  .debug_ranges  0x00000000       0x10 ./src/synergy_gen/hal_data.o
  .debug_line    0x00000000       0x61 ./src/synergy_gen/hal_data.o
- .debug_str     0x00000000      0x1ce ./src/synergy_gen/hal_data.o
+ .debug_str     0x00000000      0x1df ./src/synergy_gen/hal_data.o
  .comment       0x00000000       0x4a ./src/synergy_gen/hal_data.o
  .debug_frame   0x00000000       0x20 ./src/synergy_gen/hal_data.o
  .ARM.attributes
@@ -301,12 +301,12 @@ Discarded input sections
                 0x00000000       0x2c ./src/hal_entry.o
  .text.turnalloff_led
                 0x00000000       0x2c ./src/hal_entry.o
- .text          0x00000000        0x0 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
- .data          0x00000000        0x0 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
- .bss           0x00000000        0x0 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
- .text          0x00000000        0x0 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
- .data          0x00000000        0x0 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
- .bss           0x00000000        0x0 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
+ .text          0x00000000        0x0 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+ .data          0x00000000        0x0 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+ .bss           0x00000000        0x0 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+ .text          0x00000000        0x0 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
+ .data          0x00000000        0x0 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
+ .bss           0x00000000        0x0 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
  .text          0x00000000        0x0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
  .data          0x00000000        0x0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
  .bss           0x00000000        0x0 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
@@ -606,10 +606,10 @@ LOAD ./src/synergy_gen/hal_data.o
 LOAD ./src/synergy_gen/main.o
 LOAD ./src/synergy_gen/pin_data.o
 LOAD ./src/hal_entry.o
-LOAD D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\bsp\cmsis\DSP_Lib\cm4_gcc\libDSP_Lib.a
-LOAD D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\bsp\cmsis\NN_Lib\cm4_gcc\libNN_Lib.a
-LOAD D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a
-LOAD D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a
+LOAD D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\bsp\cmsis\DSP_Lib\cm4_gcc\libDSP_Lib.a
+LOAD D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\bsp\cmsis\NN_Lib\cm4_gcc\libNN_Lib.a
+LOAD D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a
+LOAD D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a
 END GROUP
 START GROUP
 LOAD c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
@@ -1241,17 +1241,17 @@ END GROUP
                 0x00002c40      0x1fc ./src/hal_entry.o
                 0x00002c40                hal_entry
  .text.R_FMI_ProductInfoGet
-                0x00002e3c       0x34 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00002e3c       0x34 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.R_FMI_VersionGet
-                0x00002e70       0x10 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00002e70       0x10 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.R_FMI_UniqueIdGet
-                0x00002e80       0x40 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00002e80       0x40 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.R_FMI_EventInfoGet
-                0x00002ec0       0x8c D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00002ec0       0x8c D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.R_FMI_Init
-                0x00002f4c       0x90 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00002f4c       0x90 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.R_FMI_FeatureGet
-                0x00002fdc      0x238 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00002fdc      0x238 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .text.__errno  0x00003214        0xc c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
                 0x00003214                __errno
  .text.memcpy   0x00003220       0x1c c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-memcpy-stub.o)
@@ -1524,14 +1524,14 @@ END GROUP
                 0x00004a60      0x370 ./src/synergy_gen/pin_data.o
                 0x00004a60                g_bsp_pin_cfg_data
  .rodata.bit_count
-                0x00004dd0       0x80 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00004dd0       0x80 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .rodata.bit_count_mask
-                0x00004e50        0x8 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00004e50        0x8 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .rodata.g_fmi_on_fmi
-                0x00004e58       0x18 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00004e58       0x18 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
                 0x00004e58                g_fmi_on_fmi
  .rodata.g_fmi_data
-                0x00004e70      0x400 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
+                0x00004e70      0x400 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
                 0x00004e70                g_fmi_data
  .rodata._global_impure_ptr
                 0x00005270        0x4 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-impure.o)
@@ -2002,7 +2002,7 @@ END GROUP
                 0x1ffe00f4                gp_cgc_feature
  *fill*         0x1ffe0114        0x4 
  .noinit        0x1ffe0118        0x8 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
- .noinit        0x1ffe0120        0x4 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+ .noinit        0x1ffe0120        0x4 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
                 0x1ffe0124                __noinit_end = .
 
 .bss            0x1ffe0124      0x134
@@ -2168,9 +2168,9 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000532       0x34 ./src/hal_entry.o
  .ARM.attributes
-                0x00000566       0x34 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+                0x00000566       0x34 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
  .ARM.attributes
-                0x0000059a       0x34 D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
+                0x0000059a       0x34 D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
  .ARM.attributes
                 0x000005ce       0x34 c:/renesas/synergy/e2studio_v2024-01.1_ssp_v2.6.1/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(lib_a-errno.o)
  .ARM.attributes
@@ -2277,8 +2277,8 @@ LOAD linker stubs
  .comment       0x00000049       0x4a ./src/synergy_gen/main.o
  .comment       0x00000049       0x4a ./src/synergy_gen/pin_data.o
  .comment       0x00000049       0x4a ./src/hal_entry.o
- .comment       0x00000049       0x4a D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
- .comment       0x00000049       0x4a D:\Documents\File_code\RENESAS\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
+ .comment       0x00000049       0x4a D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\driver\r_fmi\libs\libfmi_cm4_s7g2_gcc.a(r_fmi.o)
+ .comment       0x00000049       0x4a D:\Documents\File_code\RENESAS\RENESAS_SSP_S7G2\GPIOLed\synergy\ssp\src\bsp\mcu\s7g2\libfmi_R7FS7G27H3A01CFC_gcc.a(bsp_fmi_R7FS7G27H3A01CFC.o)
 
 .debug_info     0x00000000    0x2ff3b
  .debug_info    0x00000000    0x10aa9 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
@@ -2429,84 +2429,84 @@ LOAD linker stubs
  .debug_ranges  0x00001d48       0x10 ./src/synergy_gen/main.o
  .debug_ranges  0x00001d58      0x168 ./src/hal_entry.o
 
-.debug_line     0x00000000     0xa23d
- .debug_line    0x00000000     0x155a ./synergy/ssp/src/driver/r_ioport/r_ioport.o
- .debug_line    0x0000155a      0x6d4 ./synergy/ssp/src/driver/r_elc/r_elc.o
- .debug_line    0x00001c2e     0x2f43 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
- .debug_line    0x00004b71      0x331 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o
- .debug_line    0x00004ea2      0x6e9 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o
- .debug_line    0x0000558b      0x497 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
- .debug_line    0x00005a22      0x5e2 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o
- .debug_line    0x00006004      0x224 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o
- .debug_line    0x00006228      0x6f3 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
- .debug_line    0x0000691b      0x1cf ./synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.o
- .debug_line    0x00006aea      0x2a1 ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
- .debug_line    0x00006d8b      0x29e ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
- .debug_line    0x00007029      0x284 ./synergy/ssp/src/bsp/mcu/all/bsp_delay.o
- .debug_line    0x000072ad      0x318 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
- .debug_line    0x000075c5      0x5c3 ./synergy/ssp/src/bsp/mcu/all/bsp_locking.o
- .debug_line    0x00007b88      0x43e ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
- .debug_line    0x00007fc6      0x200 ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
- .debug_line    0x000081c6      0x2aa ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
- .debug_line    0x00008470      0x836 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
- .debug_line    0x00008ca6       0xa4 ./synergy/board/s7g2_sk/bsp_init.o
- .debug_line    0x00008d4a      0x228 ./synergy/board/s7g2_sk/bsp_leds.o
- .debug_line    0x00008f72      0x8f4 ./synergy/board/s7g2_sk/bsp_qspi.o
- .debug_line    0x00009866       0x59 ./src/synergy_gen/main.o
- .debug_line    0x000098bf      0x20d ./src/synergy_gen/pin_data.o
- .debug_line    0x00009acc      0x771 ./src/hal_entry.o
+.debug_line     0x00000000     0xa76b
+ .debug_line    0x00000000     0x15d1 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
+ .debug_line    0x000015d1      0x73a ./synergy/ssp/src/driver/r_elc/r_elc.o
+ .debug_line    0x00001d0b     0x2fba ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+ .debug_line    0x00004cc5      0x364 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o
+ .debug_line    0x00005029      0x74f ./synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o
+ .debug_line    0x00005778      0x4b9 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
+ .debug_line    0x00005c31      0x615 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o
+ .debug_line    0x00006246      0x246 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o
+ .debug_line    0x0000648c      0x737 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
+ .debug_line    0x00006bc3      0x1e0 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.o
+ .debug_line    0x00006da3      0x2c3 ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
+ .debug_line    0x00007066      0x2d1 ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
+ .debug_line    0x00007337      0x295 ./synergy/ssp/src/bsp/mcu/all/bsp_delay.o
+ .debug_line    0x000075cc      0x34b ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
+ .debug_line    0x00007917      0x5f6 ./synergy/ssp/src/bsp/mcu/all/bsp_locking.o
+ .debug_line    0x00007f0d      0x471 ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
+ .debug_line    0x0000837e      0x200 ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
+ .debug_line    0x0000857e      0x2cc ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
+ .debug_line    0x0000884a      0x8e0 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
+ .debug_line    0x0000912a       0xb5 ./synergy/board/s7g2_sk/bsp_init.o
+ .debug_line    0x000091df      0x24a ./synergy/board/s7g2_sk/bsp_leds.o
+ .debug_line    0x00009429      0x927 ./synergy/board/s7g2_sk/bsp_qspi.o
+ .debug_line    0x00009d50       0x59 ./src/synergy_gen/main.o
+ .debug_line    0x00009da9      0x22f ./src/synergy_gen/pin_data.o
+ .debug_line    0x00009fd8      0x793 ./src/hal_entry.o
 
-.debug_str      0x00000000     0xde6a
- .debug_str     0x00000000     0x8210 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
-                               0x83d9 (size before relaxing)
- .debug_str     0x00008210      0x43d ./synergy/ssp/src/driver/r_elc/r_elc.o
-                               0x51fc (size before relaxing)
- .debug_str     0x0000864d     0x1958 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
-                               0x736f (size before relaxing)
- .debug_str     0x00009fa5       0x7b ./synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o
-                               0x1632 (size before relaxing)
- .debug_str     0x0000a020      0x250 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o
-                               0x21d6 (size before relaxing)
- .debug_str     0x0000a270      0xd89 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
-                               0x13d8 (size before relaxing)
- .debug_str     0x0000aff9      0x379 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o
-                               0x2140 (size before relaxing)
- .debug_str     0x0000b372     0x135e ./synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o
-                               0x1f09 (size before relaxing)
- .debug_str     0x0000c6d0      0x2eb ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
-                               0x2e02 (size before relaxing)
- .debug_str     0x0000c9bb       0x57 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.o
-                                0x8aa (size before relaxing)
- .debug_str     0x0000ca12       0xd1 ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
-                               0x1d2b (size before relaxing)
- .debug_str     0x0000cae3       0x6b ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
-                               0x261d (size before relaxing)
- .debug_str     0x0000cb4e      0x119 ./synergy/ssp/src/bsp/mcu/all/bsp_delay.o
-                                0x2d9 (size before relaxing)
- .debug_str     0x0000cc67      0x119 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
-                                0xdb8 (size before relaxing)
- .debug_str     0x0000cd80      0x14e ./synergy/ssp/src/bsp/mcu/all/bsp_locking.o
-                               0x209f (size before relaxing)
- .debug_str     0x0000cece       0xa7 ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
-                               0x1582 (size before relaxing)
- .debug_str     0x0000cf75       0x9b ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
-                                0x245 (size before relaxing)
- .debug_str     0x0000d010       0x9d ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
-                                0x902 (size before relaxing)
- .debug_str     0x0000d0ad      0x2d0 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
-                               0x7274 (size before relaxing)
- .debug_str     0x0000d37d       0x32 ./synergy/board/s7g2_sk/bsp_init.o
-                                0x1cd (size before relaxing)
- .debug_str     0x0000d3af       0x33 ./synergy/board/s7g2_sk/bsp_leds.o
-                               0x1973 (size before relaxing)
- .debug_str     0x0000d3e2      0x80b ./synergy/board/s7g2_sk/bsp_qspi.o
-                               0x1373 (size before relaxing)
- .debug_str     0x0000dbed       0x24 ./src/synergy_gen/main.o
-                                0x130 (size before relaxing)
- .debug_str     0x0000dc11      0x1fc ./src/synergy_gen/pin_data.o
-                               0x1e44 (size before relaxing)
- .debug_str     0x0000de0d       0x5d ./src/hal_entry.o
-                               0x19f3 (size before relaxing)
+.debug_str      0x00000000     0xde7b
+ .debug_str     0x00000000     0x8221 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
+                               0x83ea (size before relaxing)
+ .debug_str     0x00008221      0x43d ./synergy/ssp/src/driver/r_elc/r_elc.o
+                               0x520d (size before relaxing)
+ .debug_str     0x0000865e     0x1958 ./synergy/ssp/src/driver/r_cgc/r_cgc.o
+                               0x7380 (size before relaxing)
+ .debug_str     0x00009fb6       0x7b ./synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o
+                               0x1643 (size before relaxing)
+ .debug_str     0x0000a031      0x250 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o
+                               0x21e7 (size before relaxing)
+ .debug_str     0x0000a281      0xd89 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o
+                               0x13e9 (size before relaxing)
+ .debug_str     0x0000b00a      0x379 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o
+                               0x2151 (size before relaxing)
+ .debug_str     0x0000b383     0x135e ./synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o
+                               0x1f1a (size before relaxing)
+ .debug_str     0x0000c6e1      0x2eb ./synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.o
+                               0x2e13 (size before relaxing)
+ .debug_str     0x0000c9cc       0x57 ./synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.o
+                                0x8bb (size before relaxing)
+ .debug_str     0x0000ca23       0xd1 ./synergy/ssp/src/bsp/mcu/all/bsp_common.o
+                               0x1d3c (size before relaxing)
+ .debug_str     0x0000caf4       0x6b ./synergy/ssp/src/bsp/mcu/all/bsp_common_leds.o
+                               0x262e (size before relaxing)
+ .debug_str     0x0000cb5f      0x119 ./synergy/ssp/src/bsp/mcu/all/bsp_delay.o
+                                0x2ea (size before relaxing)
+ .debug_str     0x0000cc78      0x119 ./synergy/ssp/src/bsp/mcu/all/bsp_irq.o
+                                0xdc9 (size before relaxing)
+ .debug_str     0x0000cd91      0x14e ./synergy/ssp/src/bsp/mcu/all/bsp_locking.o
+                               0x20b0 (size before relaxing)
+ .debug_str     0x0000cedf       0xa7 ./synergy/ssp/src/bsp/mcu/all/bsp_register_protection.o
+                               0x1593 (size before relaxing)
+ .debug_str     0x0000cf86       0x9b ./synergy/ssp/src/bsp/mcu/all/bsp_sbrk.o
+                                0x256 (size before relaxing)
+ .debug_str     0x0000d021       0x9d ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.o
+                                0x913 (size before relaxing)
+ .debug_str     0x0000d0be      0x2d0 ./synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.o
+                               0x7285 (size before relaxing)
+ .debug_str     0x0000d38e       0x32 ./synergy/board/s7g2_sk/bsp_init.o
+                                0x1de (size before relaxing)
+ .debug_str     0x0000d3c0       0x33 ./synergy/board/s7g2_sk/bsp_leds.o
+                               0x1984 (size before relaxing)
+ .debug_str     0x0000d3f3      0x80b ./synergy/board/s7g2_sk/bsp_qspi.o
+                               0x1384 (size before relaxing)
+ .debug_str     0x0000dbfe       0x24 ./src/synergy_gen/main.o
+                                0x141 (size before relaxing)
+ .debug_str     0x0000dc22      0x1fc ./src/synergy_gen/pin_data.o
+                               0x1e55 (size before relaxing)
+ .debug_str     0x0000de1e       0x5d ./src/hal_entry.o
+                               0x1a04 (size before relaxing)
 
 .debug_frame    0x00000000     0x1cc8
  .debug_frame   0x00000000      0x284 ./synergy/ssp/src/driver/r_ioport/r_ioport.o
